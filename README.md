@@ -1,4 +1,4 @@
-<h1 align="center">Serenity</h1>  
+<h1 align="center">ChipsHack</h1>  
 <h3 align="center">Minecraft utility mod for anarchy servers</h3>  
   
   
