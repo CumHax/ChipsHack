@@ -29,9 +29,8 @@ public class Aura extends Module
 
     @SubscribeEvent
     public void onUpdate(UpdateEvent event) {
-        if (swordValue.getValue() == Sword.REQUIRE && !(mc.player.getHeldItemMainhand().getItem() instanceof ItemSword)) {
+        if (swordValue.getValue() == Sword.REQUIRE && !(mc.player.getHeldItemMainhand().getItem() instanceof ItemSword))
             return;
-        }
 
         final Entity entity;
         entity = getTarget();

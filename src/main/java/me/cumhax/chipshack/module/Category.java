@@ -9,7 +9,7 @@ public enum Category
 	MISC("Miscellaneous"),
 	//COMPONENT("Component"),
 	HIDDEN("Hidden"),
-	GUI("Gui");
+	CLIENT("Client");
 
 	private String name;
 

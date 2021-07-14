@@ -1,6 +1,8 @@
 package me.cumhax.chipshack.util;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockEnderChest;
+import net.minecraft.block.BlockObsidian;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
@@ -113,5 +115,23 @@ public class PlayerUtil
 		if (mc.player.moveStrafing < 0f) rotationYaw += 90f * forward;
 
 		return Math.toRadians(rotationYaw);
+	}
+
+	public int findHotbarBlock(){
+		return findHotbarBlock();
+	}
+
+	public void switchToSlot(int hotbarBlock){
+
+	}
+
+	public void placeBlock(BlockPos originalPos, EnumHand mainHand, boolean b, boolean b1, boolean b2){
+
+	}
+
+
+
+	public int findHotbarBlock(Class<BlockEnderChest> blockEnderChestClass){
+		return 0;
 	}
 }
