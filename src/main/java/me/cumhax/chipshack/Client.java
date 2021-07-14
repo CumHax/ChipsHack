@@ -15,7 +15,7 @@ import me.cumhax.chipshack.manager.ConfigManager;
 import java.awt.*;
 import java.io.IOException;
 
-@Mod(modid = "chipshack", name = "ChipsHack", version = "b1")
+@Mod(modid = "chipshack", name = "ChipsHack", version = "b2")
 public class Client
 {
 	public static ModuleManager moduleManager;

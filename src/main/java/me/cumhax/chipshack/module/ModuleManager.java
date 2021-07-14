@@ -7,6 +7,7 @@ import me.cumhax.chipshack.module.misc.*;
 import me.cumhax.chipshack.module.movement.*;
 import me.cumhax.chipshack.module.render.*;
 import me.cumhax.chipshack.module.chat.*;
+import me.cumhax.chipshack.module.gui.*;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -18,15 +19,12 @@ public class ModuleManager
 
 	public ModuleManager()
 	{
-		// Hidden Category
-		modules.add(new ClickGUI("ClickGUI", "Toggle modules by clicking on them", Category.HIDDEN));
-
 		// Render Category
-		modules.add(new CustomFont("CustomFont", "Use a custom font render instead of Minecraft's default", Category.RENDER));
 		modules.add(new HoleESP( "HoleESP", "Renders safe holes from Crystals", Category.RENDER));
 		modules.add(new BlockHighlight( "BlockHighlight", "Highlights the block you're looking at", Category.RENDER));
-		modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.RENDER));
 		modules.add(new Tracers("Tracers", "Tracers to stuff", Category.RENDER));
+		modules.add(new AntiWeather());
+		modules.add(new Fullbright());
 		
 		// Combat Category
 		modules.add(new Aura());
@@ -35,12 +33,13 @@ public class ModuleManager
 		modules.add(new AutoLog("AutoLog", "Automatically logs out when your health is low", Category.COMBAT));
 		modules.add(new AutoTrap("AutoTrap", "Traps players", Category.COMBAT));
 		modules.add(new Criticals("Criticals", "Deal critical hits without jumping", Category.COMBAT));
+		modules.add(new Offhand());
 		modules.add(new Surround("Surround", "Places blocks around you", Category.COMBAT));
 
 		// Movement Category
 		modules.add(new Speed("Speed", "Allows you to move faster", Category.MOVEMENT));
 		modules.add(new Sprint("Sprint", "Automatically toggles sprint for you", Category.MOVEMENT));
-		modules.add(new AutoHole("AutoHole", "Automatically goes into holes for you", Category.MOVEMENT));
+		modules.add(new AutoHole("Anchor", "Automatically goes into holes for you", Category.MOVEMENT));
 		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
 		modules.add(new Jesus("Jesus", "Walk on water", Category.MOVEMENT));
 		modules.add(new Step("Step", "Go up blocks automatically", Category.MOVEMENT));
@@ -62,10 +61,13 @@ public class ModuleManager
 		modules.add(new FakePlayer());
 		modules.add(new OffhandSwing());
 
-		//Component Category
-		//modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.COMPONENT));
-		//modules.add(new ArrayList("ArrayList", "Displays enabled modules", Category.COMPONENT));
-
+        // Gui Category
+		modules.add(new ArrayListE());
+		modules.add(new ClickGUI("ClickGUI", "Toggle modules by clicking on them", Category.GUI));
+		modules.add(new Coords());
+		modules.add(new CustomFont());
+		modules.add(new Watermark());
+		
 		for (Module module : modules) {
 			for (Field declaredField : module.getClass().getDeclaredFields()) {
 				declaredField.setAccessible(true);

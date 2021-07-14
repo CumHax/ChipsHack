@@ -8,7 +8,8 @@ public enum Category
 	CHAT("Chat"),
 	MISC("Miscellaneous"),
 	//COMPONENT("Component"),
-	HIDDEN("Hidden");
+	HIDDEN("Hidden"),
+	GUI("Gui");
 
 	private String name;
 

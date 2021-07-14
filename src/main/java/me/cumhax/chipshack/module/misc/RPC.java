@@ -12,7 +12,7 @@ public class RPC extends Module {
         super(name, description, category);
     }
 
-    public static Discord discordRPC = new RPCBuilder("862318235717861376").withDetails("A Swag Client By CumHax").withState("").withLargeImageKey("lol").withLargeImageText("ChipsHack b1").build();
+    public static Discord discordRPC = new RPCBuilder("862318235717861376").withDetails("A Swag Client By CumHax").withState("").withLargeImageKey("lol").withLargeImageText("ChipsHack b2").build();
 
     @Override
     public void onEnable()
