@@ -12,6 +12,6 @@
 
 ## Building
 
- 1. Clone the repository. `git clone https://github.com/KohimaNayagato/Serenity.git`
+ 1. Clone the repository. `git clone 
  2. Open the cloned folder in your IDE of choice
  3. Add `-Dfml.coreMods.load=MixinLoader` to JVM options
