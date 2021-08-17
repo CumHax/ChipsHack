@@ -1,31 +1,30 @@
 package me.cumhax.chipshack.module.render;
 
-import me.cumhax.chipshack.value.Value;
+import me.cumhax.chipshack.setting.Setting;
 import me.cumhax.chipshack.module.Category;
 import me.cumhax.chipshack.module.Module;
 
-public class ViewmodelChanger extends Module 
-{
-	public ViewmodelChanger() {
-        super("ViewmodelChanger", "", Category.RENDER);
-    }
-
+public class ViewmodelChanger extends Module {
+	
+		public ViewmodelChanger() {
+		super("ViewmodelChanger", "", Category.RENDER);
+	}
+	
     public static ViewmodelChanger INSTANCE;
 
     {
         INSTANCE = this;
     }
 
-    public final Value<Integer> translateX = new Value<>("TranslateX", 0, -100, 100);
-    public final Value<Integer> translateY = new Value<>("TranslateY", 0, -100, 100);
-    public final Value<Integer> translateZ = new Value<>("TranslateZ", 0, -100, 100);
+    private final Setting translateX = new Setting("TransLateX", this, 0, -100, 100);
+    private final Setting translateY = new Setting("TransLateY", this, 0, -100, 100);
+    private final Setting translateZ = new Setting("TransLateZ", this, 0, -100, 100);
 
-    public final Value<Integer> rotateX = new Value<>("RotateX", 0, -100, 100);
-    public final Value<Integer> rotateY = new Value<>("RotateY", 0, -100, 100);
-    public final Value<Integer> rotateZ = new Value<>("RotateZ", 0, -100, 100);
+    private final Setting rotateX = new Setting("RotateX", this, 0, -100, 100);
+    private final Setting rotateY = new Setting("RotateY", this, 0, -100, 100);
+	private final Setting rotateZ = new Setting("RotateZ", this, 0, -100, 100);
 
-    public final Value<Integer> scaleX = new Value<>("ScaleX", 100, 0, 100);
-    public final Value<Integer> scaleY = new Value<>("ScaleY", 100, 0, 100);
-    public final Value<Integer> scaleZ = new Value<>("ScaleZ", 100, 0, 100);
-
-}
+    private final Setting scaleX = new Setting("ScaleX", this, 0, -100, 100);
+    private final Setting scaleY = new Setting("ScaleY", this, 0, -100, 100);
+    private final Setting scaleZ = new Setting("ScaleZ", this, 0, -100, 100);
+   }

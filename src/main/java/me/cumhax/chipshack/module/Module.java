@@ -7,12 +7,13 @@ import net.minecraftforge.common.MinecraftForge;
 
 public class Module
 {
-	private String name;
+	protected Object onRender;
+    private String name;
 	private String description;
 	private Category category;
 	private int bind;
 	private boolean enabled;
-	public final Minecraft mc = Minecraft.getMinecraft();
+	public static final Minecraft mc = Minecraft.getMinecraft();
 
 	public Module(String name, Category category)
 	{

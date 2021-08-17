@@ -23,12 +23,12 @@ public class Offhand extends Module
 	}
 	
     private final Setting health = new Setting("Health", this, 10, 1, 30);
-	
-	private final Setting mode = new Setting("Mode", this, Arrays.asList(
-		"Totem",
-		"Gapple",
-		"Crystal"
+	private final me.cumhax.chipshack.setting.Setting mode = new Setting ("Mode", this, Arrays.asList(
+			"Totem",
+			"Gap",
+			"Crystal"
 	));
+
 
     public Offhand(String name, String description, Category category)
     {

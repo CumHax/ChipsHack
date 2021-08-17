@@ -1,6 +1,6 @@
 package me.cumhax.chipshack.module.movement;
 
-import me.cumhax.chipshack.event.more.PacketReceiveEvent;
+import me.cumhax.chipshack.event.PacketReceiveEvent;
 import me.cumhax.chipshack.module.Category;
 import me.cumhax.chipshack.module.Module;
 import net.minecraft.network.play.server.SPacketEntityVelocity;

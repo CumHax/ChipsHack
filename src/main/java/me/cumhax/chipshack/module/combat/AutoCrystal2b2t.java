@@ -41,6 +41,8 @@ public class AutoCrystal2b2t extends Module
     private final Setting enemyRange = new Setting("EnemyRange", this, 9, 1, 20);
     private final Setting multiPlace = new Setting("MultiPlace", this, false);
     private final Setting onlyOwn = new Setting("OnlyOwn", this, true);
+    private final Setting SlientSwitch = new Setting("SlientSwitch", this, false);
+    private final Setting Rotate = new Setting("Rotate", this, true);
     private final Setting facePlaceHealth = new Setting("FacePlaceHealth", this, 7, 0, 36);
     private final Setting itemSwitch = new Setting("ItemSwitch", this, true);
     private final Setting color = new Setting("Color", this, Arrays.asList(
@@ -55,10 +57,10 @@ public class AutoCrystal2b2t extends Module
 
     private final ArrayList<BlockPos> ownCrystals = new ArrayList<>();
     private BlockPos render;
-    private long placeSystemTime = -1L;
-    private long breakSystemTime = -1L;
-    private long multiPlaceSystemTime = -1L;
-    private long antiStuckSystemTime = -1L;
+    private long placeSystemTime = -1;
+    private long breakSystemTime = -1;
+    private long multiPlaceSystemTime = -1;
+    private long antiStuckSystemTime = -1;
     private boolean togglePitch = false;
     private boolean switchCooldown = false;
     private boolean isSpoofingAngles;

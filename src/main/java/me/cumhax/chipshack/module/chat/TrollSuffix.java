@@ -1,6 +1,5 @@
 package me.cumhax.chipshack.module.chat;
 
-
 import me.cumhax.chipshack.Client;
 import me.cumhax.chipshack.module.Category;
 import me.cumhax.chipshack.module.Module;
@@ -11,14 +10,12 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ChatSuffix extends Module
+public class TrollSuffix extends Module
 {
 	private final ArrayList<String> prefixes = new ArrayList<>(Arrays.asList("/", ".", "-", ",", ":", ";", "'", "\"", "+", "\\"));
 
-	public ChatSuffix(String name, String description, Category category)
-	{
-		super(name, description, category);
-
+	public TrollSuffix() {
+		super("TrollSuffix", "", Category.CHAT);
 	}
 
 	@SubscribeEvent
@@ -36,7 +33,7 @@ public class ChatSuffix extends Module
 
 		String msg;
 		{
-			msg = String.format("%s \uFF5C ᴄʜɪᴘꜱʜᴀᴄᴋ", event.getMessage());
+			msg = String.format("%s \uFF5C  » ɴᴇʙᴜʟᴀ ᵟᵃᴸᴴᵃᶜᴷ » ɪ�?ᴀᴘᴄᴛ₊ » ʌгᴇѕ+ « ᴋᴀ�?ɪ ʙʟᴜᴇ �?ɴ ᴛ�?ᴘ » ˢ�?�ᵒʷ�?? �?εᎮнᗩεѕƭυѕ » ʙᴀᴄᴋᴅ�?�?ʀᴇᴅ | �?ᴇ�?ᴡ » ᴜɴɪᴄ�?ʀɴɢ�?ᴅ.ɢɢ ~~ ꜱᴇᴘᴘᴜᴋᴜ | ʜᴜᴢᴜɴɪɢʀᴇᴇɴ.ɢɢ™ » ʙᴀᴄᴋᴄʟɪᴇɴᴛ™ » ɴ�?ᴜ ʟᴇᴀᴋ ☯ �?? ғ�?ʀɢᴇʀᴀᴛ ♡ | ӨBΛMΛ ᄃᄂIΣПƬ - ᴇʟᴇ�?ᴇɴᴛᴀʀꜱ.ᴄ�?�? 》�?ꜱɪʀɪꜱ | WÔÔK�?Ê ÇLîëÑT™ {ʀᴀɪ�?ɴᴋᴇᴋ} ッ Ｒ�?�?Ｔ ｜ ʀᴜʜᴀ�?ᴀ | ᴅ�?ᴛғᴀɢ.ɪɴ™ >> ᴀʀɪѕᴛ�?ɪѕ ʳᵘˢʰᵉʳʰᵃᶜ�?", event.getMessage());
 		}
 
 		event.setMessage(msg);
