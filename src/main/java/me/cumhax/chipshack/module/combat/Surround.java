@@ -5,6 +5,7 @@ import me.cumhax.chipshack.module.Module;
 import me.cumhax.chipshack.setting.Setting;
 import me.cumhax.chipshack.setting.SettingType;
 import me.cumhax.chipshack.util.PlayerUtil;
+
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -75,5 +76,5 @@ public class Surround extends Module
             }
         }
         if (blocksPlaced == 0) finished = true;
-    }
+   }
 }

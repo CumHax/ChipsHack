@@ -33,10 +33,7 @@ public class KillAura extends Module {
 	private final Setting range = new Setting("Range", this, 4, 0, 10);
 	private final Setting rotation = new Setting("Rotation", this, true);
 	private final Setting swordOnly = new Setting("Sword Only", this, false);
-	private final Setting mode = new Setting("Mode", this, Arrays.asList(
-			"Default",
-			"Leg"
-    ));
+	private final Setting mode = new Setting("Mode", this, Arrays.asList("Default", "Leg" ));
 
 	public KillAura() 
 	{
@@ -82,7 +79,6 @@ public class KillAura extends Module {
 	        }
 	        else {
 	            rotating = false;
-	        }
 	    }
-	
-}
+    }
+}	

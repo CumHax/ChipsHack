@@ -25,5 +25,5 @@ public class AntiWeather extends Module {
         if (Minecraft.getMinecraft().world.isRaining()) {
             Minecraft.getMinecraft().world.setRainStrength(0);
         }
-    }
+	}
 }

@@ -3,6 +3,7 @@ package me.cumhax.chipshack.module.movement;
 import me.cumhax.chipshack.module.Category;
 import me.cumhax.chipshack.module.Module;
 import me.cumhax.chipshack.setting.Setting;
+
 import me.cumhax.chipshack.event.MoveEvent;
 import net.minecraft.network.play.client.CPacketPlayer;
 import net.minecraftforge.event.entity.living.LivingEvent;

@@ -5,6 +5,7 @@ import me.cumhax.chipshack.module.Module;
 import me.cumhax.chipshack.setting.Setting;
 import me.cumhax.chipshack.setting.SettingType;
 import me.cumhax.chipshack.util.PlayerUtil;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;

@@ -4,6 +4,7 @@ import me.cumhax.chipshack.module.Category;
 import me.cumhax.chipshack.module.Module;
 import me.cumhax.chipshack.setting.Setting;
 import me.cumhax.chipshack.setting.SettingType;
+
 import me.cumhax.chipshack.mixin.mixins.accessor.IMinecraft;
 import me.cumhax.chipshack.mixin.mixins.accessor.ITimer;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

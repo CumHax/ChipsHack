@@ -3,7 +3,7 @@ package me.cumhax.chipshack.module.combat;
 import me.cumhax.chipshack.module.Category;
 import me.cumhax.chipshack.module.Module;
 import me.cumhax.chipshack.setting.Setting;
-import me.cumhax.chipshack.util.LoggerUtil;
+
 import net.minecraft.init.Items;
 import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.ContainerPlayer;
@@ -13,9 +13,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import java.util.Arrays;
 
-// Made by Lnadav
-
-//TODO Add Totem Check
 public class Offhand extends Module
 {
 	public Offhand() {
@@ -60,7 +57,7 @@ public class Offhand extends Module
     {
 		if (mc.player.getHealth() <= health.getIntegerValue() || mode.getEnumValue().equalsIgnoreCase("Totem") ) {
 			if (mc.player.getHeldItemOffhand().getItem() != Items.TOTEM_OF_UNDYING){
-				LoggerUtil.sendMessage("Putting Totem In Offhand!");
+				//LoggerUtil.sendMessage("Putting Totem In Offhand!");
 				
 				replaceOffHand(TotemCache);
 				
@@ -82,7 +79,7 @@ public class Offhand extends Module
 		// SWITCH TO GAPPLE IF MODE IS GAPPLE
 		else if (mc.player.getHealth() > health.getIntegerValue() && mode.getEnumValue().equalsIgnoreCase("Gapple") ) {
 			if (mc.player.getHeldItemOffhand().getItem() != Items.GOLDEN_APPLE){
-				LoggerUtil.sendMessage("Putting Totem In Offhand!");
+				//LoggerUtil.sendMessage("Putting Totem In Offhand!");
 				inv = mc.player.inventory.mainInventory;
 				for (InvID = 0; InvID < inv.size(); InvID++) {
 					if (inv.get(InvID) != ItemStack.EMPTY) {
@@ -97,7 +94,7 @@ public class Offhand extends Module
 		//SWITCH TO CRYSTAL
 		else if (mc.player.getHealth() > health.getIntegerValue() && mode.getEnumValue().equalsIgnoreCase("Crystal") ) {
 			if (mc.player.getHeldItemOffhand().getItem() != Items.END_CRYSTAL){
-				LoggerUtil.sendMessage("Putting Totem In Offhand!");
+				//LoggerUtil.sendMessage("Putting Totem In Offhand!");
 				inv = mc.player.inventory.mainInventory;
 				for (InvID = 0; InvID < inv.size(); InvID++) {
 					if (inv.get(InvID) != ItemStack.EMPTY) {
@@ -118,5 +115,4 @@ public class Offhand extends Module
             mc.playerController.windowClick(0, InvID < 9 ? InvID + 36 : InvID, 0, ClickType.PICKUP, mc.player);
         }
     }
-	
 }

@@ -7,8 +7,8 @@ public enum Category
 	MOVEMENT("Movement"),
 	CHAT("Chat"),
 	MISC("Miscellaneous"),
-	HIDDEN("Hidden"),
-	HUD("Hud");
+	HUD("Hud"),
+	HIDDEN("Hidden");
 
 	private String name;
 

@@ -3,6 +3,7 @@ package me.cumhax.chipshack.module.combat;
 import me.cumhax.chipshack.module.Module;
 import me.cumhax.chipshack.util.InventoryUtil;
 import me.cumhax.chipshack.module.Category;
+
 import net.minecraft.init.Items;
 import net.minecraft.network.play.client.CPacketHeldItemChange;
 import net.minecraft.network.play.client.CPacketPlayerTryUseItem;
@@ -28,5 +29,5 @@ public class KeyPearl extends Module
         mc.player.connection.sendPacket(new CPacketPlayerTryUseItem(EnumHand.MAIN_HAND));
         mc.player.connection.sendPacket(new CPacketHeldItemChange(mc.player.inventory.currentItem));
         this.disable();
-    }
+   }
 }

@@ -2,6 +2,7 @@ package me.cumhax.chipshack.module.combat;
 
 import me.cumhax.chipshack.module.Category;
 import me.cumhax.chipshack.module.Module;
+
 import me.cumhax.chipshack.setting.Setting;
 import me.cumhax.chipshack.setting.SettingType;
 import net.minecraft.client.gui.GuiMainMenu;
@@ -28,6 +29,6 @@ public class AutoLog extends Module
             mc.world.sendQuittingDisconnectingPacket();
             mc.loadWorld(null);
             mc.displayGuiScreen(new GuiMainMenu());
-        }
-    }
+		}
+   }
 }

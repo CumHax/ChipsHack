@@ -2,6 +2,7 @@ package me.cumhax.chipshack.module.combat;
 
 import me.cumhax.chipshack.module.Category;
 import me.cumhax.chipshack.module.Module;
+
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.InventoryEffectRenderer;
 import net.minecraft.init.Items;

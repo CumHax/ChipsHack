@@ -6,6 +6,7 @@ import me.cumhax.chipshack.setting.Setting;
 import me.cumhax.chipshack.util.PlayerUtil;
 import me.cumhax.chipshack.event.MoveEvent;
 import me.cumhax.chipshack.event.WalkEvent;
+
 import me.cumhax.chipshack.mixin.mixins.accessor.IMinecraft;
 import me.cumhax.chipshack.mixin.mixins.accessor.ITimer;
 import net.minecraft.network.play.client.CPacketPlayer;
