@@ -22,4 +22,8 @@ public class LoggerUtil
 		}
 		Logger.getGlobal().info(messageBuilder.toString());
 	}
+
+	public static void sendOverwriteClientMessage ( String string ) {
+
+	}
 }

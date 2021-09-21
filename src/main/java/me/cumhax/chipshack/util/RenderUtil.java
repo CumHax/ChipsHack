@@ -7,6 +7,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import org.lwjgl.opengl.GL11;
 
+import java.awt.*;
+
 public class RenderUtil
 {
 	public static void drawBox(AxisAlignedBB box, float r, float g, float b, float a)
@@ -38,7 +40,11 @@ public class RenderUtil
 		drawBox(axisAlignedBB, r, g, b, a);
 	}
 
-	public static void drawBorderedRect(int i, int i1, int i2, int i3, double v, int i4, int i5){
+	public static void drawBorderedRect( float i, float i1, int i2, int i3, double v, int i4, int i5){
+
+	}
+
+	public static void drawBox ( BlockPos blockPos, Color color, Object value, Object value1 ) {
 
 	}
 }

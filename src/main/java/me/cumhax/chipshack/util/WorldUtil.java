@@ -4,20 +4,20 @@
 
 package  me.cumhax.chipshack.util;
 
-import net.minecraft.world.World;
-import java.util.Iterator;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.Vec3i;
-import net.minecraft.entity.Entity;
-import net.minecraft.network.play.client.CPacketEntityAction;
-import net.minecraft.network.Packet;
-import net.minecraft.network.play.client.CPacketPlayer;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.init.Blocks;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
 import me.cumhax.chipshack.MinecraftInstance;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.client.CPacketEntityAction;
+import net.minecraft.network.play.client.CPacketPlayer;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.world.World;
 
 public class WorldUtil implements MinecraftInstance
 {
@@ -58,5 +58,9 @@ public class WorldUtil implements MinecraftInstance
     
     public static boolean canBreak(final BlockPos pos) {
         return WorldUtil.mc.world.getBlockState(pos).getBlock().getBlockHardness(WorldUtil.mc.world.getBlockState(pos), (World)WorldUtil.mc.world, pos) != -1.0f;
+    }
+
+    public static boolean isInHole ( EntityPlayer player ) {
+        return false;
     }
 }
