@@ -6,4 +6,7 @@ public class UpdateEvent extends EventStageable {
         super(stage);
     }
 
+    public boolean getType () {
+        return false;
+    }
 }

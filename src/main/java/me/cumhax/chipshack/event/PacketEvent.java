@@ -24,6 +24,14 @@ public class PacketEvent extends Event
         this.packet = packet;
     }
 
+    public boolean getType () {
+        return false;
+    }
+
+    public void setCancelled ( boolean b ) {
+
+    }
+
     public static class Receive extends PacketEvent
     {
         public Receive(Packet<?> packet)
